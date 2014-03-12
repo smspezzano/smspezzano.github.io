@@ -9,7 +9,9 @@ categories: jekyll update
 Today marked the start of a new stage in my life.  I started the winter session of Web Development Immersive at General Assembly in San Francisco.  I recently left my job at a music start-up to take part in this program and at the end of 3 month journey my goal is to become a junior developer.
 
 The first day involved some basic introductions into Ruby and the command line.  After a few hours of instruction we were pushed into the wild to attempt our first lab.  The lab involved 3 exercises and one really had me scratching my head.  Interesting side note is that one of my instructors told me  this was a problem in his intro to CS course.  Below is screenshot of the lab exercise:
-<img src="http://i57.tinypic.com/1z5osjl.png" height="50" width="42">
+
+<img src="http://i57.tinypic.com/1z5osjl.png" height="50px" width="42px">
+
 As I worked through this project my main issue was getting the asterix "frame" on the top and bottom to be proportionate to the longest word in the string.  At first I tried just typing "puts '************'", but that was easily broken when I typed in a word longer or shorter than the length of the words in the entered string.  Then I decided that I should use the length of the longest word as a base to build on.
 
 I found the longest word by using these lines of code:
@@ -27,7 +29,7 @@ frame_top_bottom.times {print "*"}
 
 The key here was the + 4 that I got after drawing out the problem (sorry for my poor drawing skills):
 
-<img src="http://spencerspezzano.files.wordpress.com/2014/01/drawing-example.jpg" height="50" width="42">
+<img src="http://spencerspezzano.files.wordpress.com/2014/01/drawing-example.jpg" height="50px" width="42px">
 
 It was there that I realized I would need 2 spaces on each side no matter what length the word is in order to create the frame above.  While the problem is an elementary one, the lesson is one that I will apply throughout my new career.  Drawing out a problem is a great way to visualize what is going on and allows your brain to see it in a new way.
 
