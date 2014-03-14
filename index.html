@@ -2,19 +2,39 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+  <script src="js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
-  <header>
-    <h3>Spencer Spezzano</h3>
+  <header id="nav">
     <ul>
+      <a href="#about"><li>About Me</li></a>
       <a href="/myblog"><li>Blog</li></a>
-      <a href="https://github.com/smspezzano"><li>Github</li></a>
-      <a href="http://www.linkedin.com/in/spencerspezzano/"><li>LinkedIn</li></a>
-      <a href="https://twitter.com/SpencerKFNP"><li>Twitter</li></a>
+      <a href="https://github.com/smspezzano" target="_blank"><li>Github</li></a>
+      <a href="http://www.linkedin.com/in/spencerspezzano/" target="_blank"><li>LinkedIn</li></a>
+      <a href="https://twitter.com/SpencerKFNP" target="_blank"><li>Twitter</li></a>
     </ul>
   </header>
   <div class='content_wrapper'>
-  <h1 id='pageTitle'>Welcome to my site, it is always a work in progress!</h1>
+    <div class='top_div_wrapper'>
+      <h1 id='pageTitle'>Spencer Spezzano</h1>
+      <div class='profile_picture'>
+        <img src="http://www.hootpile.com/img/facebook-default-no-profile-pic.jpg" id="my_pic">
+      </div>
+    </div> <!-- end top_div_wrapper -->
+    <div class="about_me">
+      <a name="about"></a>
+        <div class='about_me_text'>
+        <h3>About Me</h3>
+        <p>I recently changed the direction of my career path and after completing a web development program am now a full stack web developer. My specialties include Ruby on Rails, JavaScript, HTML5, and CSS3. I also have some experience with Mustache.js, Backbone.js, and Postgress.</p>
+
+        <p>In addition to my coding skills I have several years of experience working in the business development department of a start-up. There I was tasked with data management and analysis and I also managed a small team of admins. That experience left me with the ability to develop long term relationships with clients and help them reach their goals.</p>
+        </div> <!-- end about_me_text -->
+    </div> <!-- end about_me -->
   </div> <!-- end content_wrapper -->
 </body>
 </html>
