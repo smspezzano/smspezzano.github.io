@@ -18,6 +18,7 @@ header ul {
   font-size: 25px;
   font-family: 'Duru Sans', sans-serif;
   font-weight: bold;
+
 }
 
 header li {
@@ -37,7 +38,7 @@ a {
 
 a:link {color:#0000FF;}      
 a:visited {color:#0000FF;}  
-a:hover {color:#F7CA18;}  
+a:hover {color:#FFFF00;}  
 
 .top_div_wrapper {
   background-color: #C5EFF7;
