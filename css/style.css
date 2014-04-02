@@ -2,50 +2,75 @@ body {
   margin: 0;
 }
 
-header {
-  width: 100%;
-  height: 60px;
-  background-color: #30ACFF;
-  z-index: 10px;
-  position: fixed;
-  top: 0;
+/*.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  background-color:  #30ACFF;
+  height: ;
 }
 
-header ul {
-  list-style-type:none;
-  text-align: center;
-  color:#0000FF;
-  font-size: 25px;
-  font-family: 'Duru Sans', sans-serif;
+.navbar-header {
+  background-color:  ;
+}*/
+
+.top-bar {
+  background: #0078a0;
+  height: 45px;
+  margin-bottom: -40px;
+  font-size: 18px;
   font-weight: bold;
 
 }
 
-header li {
-  display:inline;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 25px;
+.top-bar-section li.active:not(.has-form) a:not(.button){
+  background: #0078a0;
+  font-size: 18px;
   font-family: 'Duru Sans', sans-serif;
   font-weight: bold;
-  letter-spacing: 1px;
-  height: 40px;
 }
 
-a {
-  text-decoration: none;
+.top-bar-section li:not(.has-form) a:not(.button){
+   font-size: 18px;
+   background: #0078a0;
+   font-family: 'Duru Sans', sans-serif;
 }
 
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+  background: rgba(48, 172, 255, 1);
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+  background: rgba(48, 172, 255, 1);
+}
+
+.top-bar-section ul {
+  background: none;
+  color: rgb(255,255,255, 0.9);
+}
+
+.top-bar-section ul.dropdown li a:hover:not(.button) {
+    background: none repeat scroll 0 0 rgba(48, 172, 255, .9);
+}
+
+.top-bar-section ul.dropdown {
+    background: #333;
+    color: #fff;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    border-color: rgba(0, 0, 0, 1) transparent transparent;
+    margin-top: 2.5px;
+}
+
+/*
 a:link {color:#0000FF;}      
 a:visited {color:#0000FF;}  
 a:hover {color:#FFFF00;}  
-
+*/
 .top_div_wrapper {
   background-color: #C5EFF7;
   width: 100%;
   height: 700px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: -50px;
 }
 
@@ -79,6 +104,62 @@ a:hover {color:#FFFF00;}
 
 }
 
+@media only screen and (max-width: 942px) {
+
+  .top-bar .name h1 a {
+    background: #0078a0;
+  }
+
+  .top-bar .title-area {
+    background: #0078a0;
+  }
+
+  /* Makes the responsive menu fit in the navigation container and change its background to black */
+  .top-bar ul {
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Change non active menu item color to black */
+  .top-bar-section ul li > a {
+      color: #fff;
+  }
+
+  /* Gives the dropdown ul a black fill */
+  .top-bar-section ul {
+      background: #000;
+  }
+
+  /* Give the BACK button after going in a submenu the appropriate filling */
+  .top-bar-section .dropdown li.title h5 a {
+      line-height: 57px;
+  }
+
+  /* This fixes the position and the color of the dropdown arrow */
+  .top-bar-section .has-dropdown > a:after {
+      border-color: rgba(255, 255, 255, 1) transparent transparent;
+      margin-top: 2.5px;
+  }
+
+  #pageTitle {
+    font-size: 50px;
+  }
+
+  #my_pic {
+    height: 300px;
+    width: 250px;
+  }
+
+  .top_div_wrapper {
+    width: 100%;
+    height: 420px;
+    margin-bottom: -50px;
+  }
+
+  .about_me {
+    height: 790px;
+  }
+ 
+} /* end media query */
 
 
 

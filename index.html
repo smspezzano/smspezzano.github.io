@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
@@ -10,43 +10,68 @@
   <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
   <script src="js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
   <script src="js/app.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation.topbar.js"></script>
   <meta name="description" content="Spencer Spezzano's Personal Website">
   <meta name="keywords" content="spencer spezzano">
   <meta charset="UTF-8">
 </head>
 <body>
-  <header id="nav">
-    <ul>
-      <a href="#about"><li>About Me</li></a>&bull;
-      <a href="/myblog"><li>Blog</li></a>&bull;
-      <a href="mailto:smspezzano@gmail.com?Subject=Hello%20Spencer"><li>Contact Me</li></a>&bull;
-      <a href="files/SMS_Resume.pdf"><li>Resume</li></a>&bull;
-      <a href="https://github.com/smspezzano" target="_blank"><li>Github</li></a>&bull;
-      <a href="http://www.linkedin.com/in/spencerspezzano/" target="_blank"><li>LinkedIn</li></a>&bull;
-      <a href="https://twitter.com/SpencerKFNP" target="_blank"><li>Twitter</li></a>
-      
+<header>
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Spencer Spezzano</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#about">About Me</a></li>
+        <li class="active"><a href="/myblog">Blog</a></li>
+        <li class="active"><a href="mailto:smspezzano@gmail.com?Subject=Hello%20Spencer">Contact Me</a></li>
+      <li class="active"><a href="files/SMS_Resume.pdf">Resume</a></li>
+      <li class="has-dropdown">
+        <a href="#">Social</a>
+        <ul class="dropdown">
+          <li><a href="https://github.com/smspezzano" target="_blank">Github</a></li>
+          <li><a href="http://www.linkedin.com/in/spencerspezzano/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com/SpencerKFNP" target="_blank">Twitter</a></li>
+        </ul>
+      </li>
     </ul>
-  </header>
-  <div class='content_wrapper'>
-    <div class='top_div_wrapper'>
-      <h1 id='pageTitle'>Spencer Spezzano</h1>
-      <div class='profile_picture'>
-        <img src="images/Spencer_prof_pic.jpg" id="my_pic">
-      </div>
-    </div> <!-- end top_div_wrapper -->
-    <div class="about_me">
-      <a name="about"></a>
-        <div class='about_me_text'>
-        <h3>About Me</h3>
-        <p>&nbsp;&nbsp;&nbsp;I recently changed the direction of my career path and after completing a web development program am now a full stack web developer.</p>
+  </section>
+</nav>
+</header>
 
-        <p>&nbsp;&nbsp;&nbsp; My specialties include Ruby on Rails, JavaScript, HTML5, and CSS3.  I also have some experience with Mustache.js, Backbone.js, AngularJS, and PostgreSQL.</p>
+ <div class='content_wrapper'>
+      <div class='top_div_wrapper'>
+        <h1 id='pageTitle'>Spencer Spezzano</h1>
+        <div class='profile_picture'>
+          <img src="images/Spencer_prof_pic.jpg" id="my_pic">
+        </div>
+      </div> 
+      <div class="about_me">
+        <a name="about"></a>
+          <div class='about_me_text'>
+          <h3>About Me</h3>
+          <p>&nbsp;&nbsp;&nbsp;I recently changed the direction of my career path and after completing a web development program am now a full stack web developer.</p>
 
-        <p>&nbsp;&nbsp;&nbsp;In addition to my coding skills I have several years of experience working in the business development department of a start-up. There I was tasked with data management and analysis.  I also managed a team of admins. That experience left me with the ability to develop long term relationships with clients and help them reach their goals.</p>
+          <p>&nbsp;&nbsp;&nbsp; My specialties include Ruby on Rails, JavaScript, HTML5, and CSS3.  I also have some experience with Mustache.js, Backbone.js, AngularJS, and PostgreSQL.</p>
 
-        <p>&nbsp;&nbsp;&nbsp;Outside of work I am an avid San Francisco Bay Area sports fan.  I also enjoy volunteering at the San Francisco Senior Center at Aquatic Park.</p>
-        </div> <!-- end about_me_text -->
-    </div> <!-- end about_me -->
-  </div> <!-- end content_wrapper -->
+          <p>&nbsp;&nbsp;&nbsp;In addition to my coding skills I have several years of experience working in the business development department of a start-up. There I was tasked with data management and analysis.  I also managed a team of admins. That experience left me with the ability to develop long term relationships with clients and help them reach their goals.</p>
+
+          <p>&nbsp;&nbsp;&nbsp;Outside of work I am an avid San Francisco Bay Area sports fan.  I also enjoy volunteering at the San Francisco Senior Center at Aquatic Park.</p>
+          </div> <!-- end about_me_text -->
+      </div> <!-- end about_me -->
+    </div> <!-- end content_wrapper -->
+<script>
+  $(document).ready(function(){
+    $('.top-bar').localScroll({duration:700});
+  });
+  $(document).foundation();
+</script>
 </body>
 </html>
