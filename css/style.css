@@ -91,8 +91,9 @@ a:hover {color:#FFFF00;}
 
 .introduction h5 {
   font-size: 50px;
-  font-family: 'Playfair Display SC', serif;
-}
+  font-family: 'Duru Sans', sans-serif;
+/*  font-family: 'Playfair Display SC', serif;
+*/}
 
 .introduction {
   margin-top: 70px;
@@ -130,10 +131,12 @@ a:hover {color:#FFFF00;}
   border: 1px groove black;
   padding: 20px;
   background: rgba(247, 202, 24, .9);
+  font-family: 'Duru Sans', sans-serif;
 }
 
 h3 {
-  font-family: 'Actor', sans-serif;
+/*  font-family: 'Actor', sans-serif;
+*/  font-family: 'Duru Sans', sans-serif;
   text-align: center;
 }
 
