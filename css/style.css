@@ -228,5 +228,89 @@ h3 {
 } /* end media query */
 
 
+@media only screen  and (min-device-width : 320px) and (max-device-width : 568px) { 
+ .top-bar .name h1 a {
+    background: #0078a0;
+  }
+
+  .top-bar .title-area {
+    background: #0078a0;
+  }
+
+  /* Makes the responsive menu fit in the navigation container and change its background to black */
+  .top-bar ul {
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Change non active menu item color to black */
+  .top-bar-section ul li > a {
+      color: #fff;
+  }
+
+  /* Gives the dropdown ul a black fill */
+  .top-bar-section ul {
+      background: #000;
+  }
+
+  /* Give the BACK button after going in a submenu the appropriate filling */
+  .top-bar-section .dropdown li.title h5 a {
+      line-height: 57px;
+  }
+
+  /* This fixes the position and the color of the dropdown arrow */
+  .top-bar-section .has-dropdown > a:after {
+      border-color: rgba(255, 255, 255, 1) transparent transparent;
+      margin-top: 2.5px;
+  }
+
+  #pageTitle {
+    font-size: 50px;
+  }
+
+  #my_pic {
+    height: 300px;
+    width: 250px;
+  }
+
+  .top_div_wrapper {
+    width: 100%;
+    height: 420px;
+  }
+
+  .about_me {
+    height: 790px;
+  }
+
+  .introduction h5 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+   .top_div_wrapper {
+    height: 480px;
+  }
+
+  .introduction {
+    margin-top: -45px;
+  }
+
+    .introduction h5 {
+    font-size: 30px;
+  }
+
+  .top_div_wrapper {
+    height: 690px;
+  }
+
+  .introduction {
+    margin-top: 25px;
+  }
+
+   #my_pic {
+    width: 350px;
+    height: 200px;
+  }
+ 
+}
 
 
