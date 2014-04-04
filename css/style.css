@@ -72,6 +72,9 @@ a:hover {color:#FFFF00;}
   text-align: center;
   margin-top: 20px;
   margin-bottom: 0px;
+  background: url('images/top_background.png');
+ /* background-size: cover;
+  background-position: center;*/
 }
 
 #my_pic {
@@ -79,6 +82,7 @@ a:hover {color:#FFFF00;}
   height: 500px;
   width: 450px;
   margin-top: 10px;
+  border: 2px solid white;
 }
 
 #pageTitle {
@@ -98,30 +102,39 @@ a:hover {color:#FFFF00;}
 .introduction {
   margin-top: 70px;
   font-weight: bold;
-  background-color: #C5EFF7;
-}
+/*  background-color: #C5EFF7;
+*/}
 
 .about_me {
-  background-color: #ECF0F1;
+  background-image: url('images/fresh_snow.png');
   width: 100%;
   height: 620px;
+  margin-top: -40px;
 }
 
-.about_me_text {
+.about_me_text_div {
+  border-radius: 5px;
   width: 60%;
   text-align: justify;
   margin: 40px auto;
   color: #0000FF;
-  font-size: 20px;
   line-height: 30px;
   font-family: 'Actor', sans-serif;
+}
 
+.about_me_text {
+  font-size: 20px;
 }
 
 .project_wrapper {
-  margin-top: 20px;
+  margin-top: -5px;
+  background-image: url(images/old_map.png);
 }
 
+/*.project_wrapper h3 {
+  color: white;
+}
+*/
 /*.projectimgs {
   height: 270px;
   width: 400px;
@@ -130,13 +143,14 @@ a:hover {color:#FFFF00;}
 .project {
   border: 1px groove black;
   padding: 20px;
-  background: rgba(247, 202, 24, .9);
+  background: rgba(0, 0, 0, .1);
   font-family: 'Duru Sans', sans-serif;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 h3 {
-/*  font-family: 'Actor', sans-serif;
-*/  font-family: 'Duru Sans', sans-serif;
+  font-family: 'Duru Sans', sans-serif;
   text-align: center;
 }
 
@@ -161,7 +175,7 @@ h3 {
 }
 
 
-@media only screen and (max-width: 942px) {
+@media only screen and (max-width: 1024px) {
 
   .top-bar .name h1 a {
     background: #0078a0;
@@ -212,7 +226,7 @@ h3 {
   }
 
   .about_me {
-    height: 790px;
+    height: 1200px;
   }
 
   .introduction h5 {
@@ -281,7 +295,7 @@ h3 {
   }
 
   .about_me {
-    height: 790px;
+    height: 1000px;
   }
 
   .introduction h5 {
