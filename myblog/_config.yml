@@ -1,5 +1,5 @@
 name: Spencer Spezzano
-markdown: redcarpet
+markdown: kramdown
 
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
@@ -21,7 +21,7 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-BASE_PATH: /myblog
+BASE_PATH: http://spencerspezzano.com/myblog
 
 # All links will be namespaced by BASE_PATH if defined.
 # Links in your website should always be prefixed with {{ site.BASE_PATH }}
