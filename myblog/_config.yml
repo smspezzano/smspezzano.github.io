@@ -11,9 +11,9 @@ description: Spencer Spezzano blog
 author:
   name: Spencer Spezzano
   email: smspezzano@gmail.com
-  github: https://github.com/smspezzano
-  twitter: https://twitter.com/SpencerKFNP
-  linkedin: https://www.linkedin.com/in/spencerspezzano
+  github: smspezzano
+  twitter: SpencerKFNP
+  linkedin: spencerspezzano
   bio: One man's journey into the world of programming!
   email_md5: 726351295ec82e145928582f595aa3aa
 
@@ -21,7 +21,7 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-BASE_PATH: 
+BASE_PATH: /myblog
 
 # All links will be namespaced by BASE_PATH if defined.
 # Links in your website should always be prefixed with {{ site.BASE_PATH }}
