@@ -24,7 +24,7 @@ tags_path: tags.html
 BASE_PATH: #/blog
 baseurl: /blog
 destination: _site/blog
-permalink: /blog/:title
+permalink: /blog
 
 # All links will be namespaced by BASE_PATH if defined.
 # Links in your website should always be prefixed with {{ site.BASE_PATH }}
