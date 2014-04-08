@@ -21,7 +21,8 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-BASE_PATH: /blog
+BASE_PATH: #/blog
+baseurl: /blog
 destination: _site/blog
 
 # All links will be namespaced by BASE_PATH if defined.
