@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>From 123 To 012</title>
+		<description>Spencer Spezzano blog</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>From 123 to 012</title>
+				<description>&lt;p&gt;Today marked the start of a new stage in my life.  I started the winter session of Web Development Immersive at General Assembly in San Francisco.  I recently left my job at a music start-up to take part in this program and at the end of 3 month journey my goal is to become a junior developer.&lt;/p&gt;
+
+&lt;p&gt;The first day involved some basic introductions into Ruby and the command line.  After a few hours of instruction we were pushed into the wild to attempt our first lab.  The lab involved 3 exercises and one really had me scratching my head.  Interesting side note is that one of my instructors told me  this was a problem in his intro to CS course.  Below is screenshot of the lab exercise:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;http://i57.tinypic.com/1z5osjl.png&quot; height=&quot;400px&quot; width=&quot;700px&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;As I worked through this project my main issue was getting the asterix &quot;frame&quot; on the top and bottom to be proportionate to the longest word in the string.  At first I tried just typing &quot;puts &#39;************&#39;&quot;, but that was easily broken when I typed in a word longer or shorter than the length of the words in the entered string.  Then I decided that I should use the length of the longest word as a base to build on.&lt;/p&gt;
+
+&lt;p&gt;I found the longest word by using these lines of code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Please enter a phrase to be framed&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;phrase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;gets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chomp&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;I am going to frame this&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;max_word&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;phrase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;frame_top_bottom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;frame_top_bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;times&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;*&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The key here was the + 4 that I got after drawing out the problem (sorry for my poor drawing skills):&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;img src=&quot;http://spencerspezzano.files.wordpress.com/2014/01/drawing-example.jpg&quot; height=&quot;300px&quot; width=&quot;400px&quot; /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;It was there that I realized I would need 2 spaces on each side no matter what length the word is in order to create the frame above.  While the problem is an elementary one, the lesson is one that I will apply throughout my new career.  Drawing out a problem is a great way to visualize what is going on and allows your brain to see it in a new way.&lt;/p&gt;
+
+&lt;p&gt;Thanks for sticking with me through my first blog post and I hope to see you back here as I continue on this journey.&lt;/p&gt;
+
+&lt;p&gt;Cheers,
+&lt;br /&gt;
+Spencer&lt;/p&gt;
+</description>
+				<pubDate>Tue, 11 Mar 2014 00:00:00 -0700</pubDate>
+				<link>/jekyll/update/2014/03/11/from-123-to-012.html</link>
+				<guid isPermaLink="true">/jekyll/update/2014/03/11/from-123-to-012.html</guid>
+			</item>
+		
+	</channel>
+</rss>
