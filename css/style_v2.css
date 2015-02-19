@@ -1,0 +1,28 @@
+.body {
+  font-family: 'Raleway', sans-serif !important;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.my-nav {
+  background-color: #3498db;
+}
+
+#my_pic {
+  height: 500px;
+  border-radius: 20%;
+}
+
+.nav-li-color {
+  color: black !important;
+}
+.nav-li-color:active {
+  color:; #777
+}
+
+.projectimgs {
+  max-width: 100%;
+  height: auto;
+}
